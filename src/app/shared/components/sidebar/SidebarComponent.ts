@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { GifsService } from '../../../gifs/services/gifs.service';
 
+
 @Component({
   selector: 'shared-sidebar',
   templateUrl: './sidebar.component.html',
@@ -8,14 +9,14 @@ import { GifsService } from '../../../gifs/services/gifs.service';
 })
 export class SidebarComponent {
 
-   public tag:string='';
-  constructor(private gifsService:GifsService) { }
+  // public tag:string='';
+  constructor(private gifsService: GifsService) { }
 
-  get tags(){
+  get tags() {
     return this.gifsService.tagHistory;
   }
-  evento():void{
+  evento(): void {
     // this.gifsService.searchTag(this.tag);
-    console.log("Hola mundo");
+    console.log(this.tags);
   }
 }

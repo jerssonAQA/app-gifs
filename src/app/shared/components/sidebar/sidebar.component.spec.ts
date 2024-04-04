@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SidebarComponent } from './sidebar.component';
+import { SidebarComponent } from './SidebarComponent';
 
 describe('SidebarComponent', () => {
   let component: SidebarComponent;
@@ -11,7 +11,7 @@ describe('SidebarComponent', () => {
       declarations: [SidebarComponent]
     })
     .compileComponents();
-    
+
     fixture = TestBed.createComponent(SidebarComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
